@@ -6,10 +6,10 @@ public class temperaturas {
 
 	@SuppressWarnings({ "unused", "resource" })
 	public static void main(String[] args) {
-		// TODO Esbozo de mÈtodo generado autom·ticamente
+		// TODO Esbozo de m√©todo generado autom√°ticamente
 
-		System.out.println("Tomar cada hora la temperatura exterior leyendola durante un perÌodo"
-				+ " de 24 horas. Encontrar las temperaturas m·s altas y m·s bajas del dÌa a partir de estos datos");
+		System.out.println("Tomar cada hora la temperatura exterior leyendola durante un per√≠odo"
+				+ " de 24 horas. Encontrar las temperaturas m√°s altas y m√°s bajas del d√≠a a partir de estos datos");
 		
 		// Ingresamos temperatura
 		
@@ -18,23 +18,33 @@ public class temperaturas {
 		int temperatura;
 		int mayor = 0;
 		int menor = 0;
+		int contador;
 		
 		// Valoramos el tipo de temperatura obtenida y obtenemos el mayor y el menor
 		
-		for (int i = 0; i < 5; i++) {
+		for (contador = 0; contador < 10; contador++) {
 			System.out.println("Introduce la temperatura deseada: ");
 			temperatura = lector.nextInt();
+			
+			if(contador == 0)
+			{
+				mayor = temperatura;
+			}
 			
 			if(temperatura > mayor)
 			{
 				mayor = temperatura;
 			}
-			else {
-				menor = temperatura;
+			else
+			{
+				if(temperatura < menor)
+				{
+					menor = temperatura;
+				}
 			}
 		}
 		
-		System.out.println("La tempertura m·xima es "+mayor+" y la temperatura mÌnima es "+menor);
+		System.out.println("La tempertura m√°xima es "+mayor+" y la temperatura m√≠nima es "+menor);
 
 	}
 

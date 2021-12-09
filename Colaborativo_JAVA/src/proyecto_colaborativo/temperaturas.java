@@ -22,7 +22,7 @@ public class temperaturas {
 		
 		// Valoramos el tipo de temperatura obtenida y obtenemos el mayor y el menor
 		
-		for (contador = 0; contador < 10; contador++) {
+		for (contador = 0; contador < 24; contador++) {
 			System.out.println("Introduce la temperatura deseada: ");
 			temperatura = lector.nextInt();
 			

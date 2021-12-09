@@ -7,16 +7,18 @@ public class Isotopo_radiactivo {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		float porcentaje;
-		int i;
 		long tiempo;
-		double mitad = 0,5;
-		int resultado;
+		float queda=(float)porcentaje/100;
+		
 		
 		
 		System.out.println("El isotopo esta al 100%");
 		System.out.println("Que porcentaje quieres meter");
 		porcentaje=scanner.nextFloat();
-		while(System.currentTimeMillis()-tiempo)<26*60*1000)) 
+		while(System.currentTimeMillis()-tiempo)<26*1000));
+		while(tiempo>porcentaje) {
+			System.out.println(""+queda);
+		}
 			
 		
 
@@ -25,3 +27,4 @@ public class Isotopo_radiactivo {
 	}
 
 }
+
